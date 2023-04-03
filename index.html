@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FCC - Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main id="main" class="container">
+        <header id="header">
+            <h1 id="title">Title</h1>
+            <p id="description">Description</p>
+        </header>
+        <form id="survey-form">
+            <!-- Name -->
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Enter your email" required>
+            </div>
+            <!-- Age -->
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input id="number" name="number" type="number" min="18" max="99" placeholder="Age" required>
+            </div>
+            <div class="form-group">
+                <label id="dropdown-label" for="dropdown">Gender</label>
+                <select id="dropdown">
+                    <option disabled selected value>Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Do you like octopi ?</label>
+                <input type="radio" checked> Yes
+                <input type="radio"> No
+            </div>
+            <div class="form-group">
+                <label></label><br>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+            </div>
+            <div class="form-group">
+                <label></label>
+                <input>
+            </div>
+            <div class="form-group">
+                <button id="submit" type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
